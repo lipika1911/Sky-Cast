@@ -1,6 +1,7 @@
 import { useTheme } from "@/context/theme-provider"
 import { CloudRain, Moon, Sun } from "lucide-react"
 import { Link } from "react-router-dom"
+import CitySearch from "./city-search";
 
 const Header = () => {
 
@@ -16,8 +17,10 @@ const Header = () => {
             <h1 className="text-xl font-bold">SkyCast</h1>
           </div>          
         </Link>
-        <div>
-          {/* search */}
+        <div className="flex gap-4">
+          {/* search bar */}
+          <CitySearch />
+
           {/* theme toggle with animation */}
           <div 
             onClick={() => setTheme(isDark ? "light" : "dark")}
