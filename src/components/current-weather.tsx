@@ -38,7 +38,7 @@ export function CurrentWeather({ data, locationName }: CurrentWeatherProps) {
               </p>
             </div>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-4">
               <p className="text-7xl font-bold tracking-tighter">
                 {formatTemp(temp)}
               </p>
